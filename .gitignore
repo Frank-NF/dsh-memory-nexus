@@ -1,0 +1,10 @@
+# .gitignore
+
+node_modules/
+*.db
+*.db-journal
+*.log
+.env
+.DS_Store
+.test-temp/
+dist/
