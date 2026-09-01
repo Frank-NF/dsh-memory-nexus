@@ -1,0 +1,51 @@
+{
+  "name": "dsh-memory-nexus",
+  "description": "DSH 一体化记忆与上下文管控增强插件 — 四层记忆 + 上下文压缩 + 提示词编排",
+  "version": "0.1.0-alpha",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "ROADMAP.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node tests/host.test.cjs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frank-NF/dsh-memory-nexus.git"
+  },
+  "homepage": "https://github.com/Frank-NF/dsh-memory-nexus",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "memory",
+    "context",
+    "sqlite",
+    "fts5",
+    "记忆",
+    "上下文",
+    "压缩"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  }
+}
